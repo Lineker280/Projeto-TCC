@@ -6,7 +6,7 @@ os setores de Desenvolvimento e Gameficação
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Escolha do Nome
+# Escolha do Nome
 
 O nome “StarLevel” reflete a busca constante por inovação, evolução contínua e superação do comum, alcançando novos níveis de qualidade.
 A inspiração veio da união entre tecnologia e criatividade, com o objetivo de desenvolver soluções digitais modernas e eficientes, 
@@ -15,7 +15,7 @@ A logo, representada por uma estrela envolta por um feixe de luz, reforça esse 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Historia da Empresa
+# Historia da Empresa
 
 A Star Level surgiu a partir de um projeto em conjunto de uma equipe de gamificação e desenvolvimento de sistemas,
 com o objetivo de levar projetos e soluções a um novo patamar, trazendo inovação por meio da tecnologia e do desenvolvimento de jogos para diferentes empresas e setores.
@@ -24,7 +24,7 @@ Sendo fundada em 28/07/2005 tendo seus 20 anos de atuação no mercado internaci
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Missão, Visão e Valores
+# Missão, Visão e Valores
 
 Missão:
 Promover a inovação tecnológica de forma acessível, aplicando-a em diversas áreas e produtos,
@@ -39,7 +39,7 @@ Prezar pela humanização, pela harmonia e pelo respeito mútuo entre os integra
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Objetivo e Slogan
+# Objetivo e Slogan
 A empresa foi idealizada com foco no ambiente digital, acompanhando as transformações do mercado e a necessidade de conexões rápidas, interativas e acessíveis.
 Ao mesmo tempo, mantém uma base estrutural física voltada ao desenvolvimento de projetos, promovendo organização, colaboração entre equipes e inovação.
 Desde sua criação, a StarLevel busca se destacar não apenas pelos serviços oferecidos, mas também pela sua visão de futuro, sempre mirando níveis mais altos de qualidade e impacto.
@@ -48,7 +48,7 @@ SLOGAN: Do processo ao sucesso
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Integrantes do Grupo
+# Integrantes do Grupo
 [Ana Júlia Marques do Prado] — Analista de dados — GitHub
 [Débora Lopes de Souza] — Analista de dados — GitHub
 [Guilherme Lineker Freitas Lima] — Analista de dados — GitHub
@@ -57,7 +57,7 @@ Integrantes do Grupo
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Instituição
+# Instituição
 Professor Etec Basilides de Godoy
 Curso Técnico em Desenvolvimento de Sistemas
 São Paulo — SP
