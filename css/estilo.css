@@ -180,8 +180,9 @@
 
 
 .desenvolvedores{
-     height: 800px;
-     width: max-content;
+     height: 900px;
+     width: 100%;
+     display: flex;
      background-image: url("../img/teste1.png");
      backdrop-filter: initial;
      background-repeat: no-repeat;
@@ -189,24 +190,30 @@
      
 }
 
+.lado-esquerdo {
+    margin-top: 120px;
+     padding-left: 100px;
+    margin-right: 50px;
+    margin-top: 100px;
+
+}
+
 
 .lado-esquerdo h1{
-    font-size: 60px;
+    font-size: 50px;
     color: #fcfcfc;
      text-shadow:
         0 0 5px #a855ff,
         0 0 10px #8b2cff,
         0 0 20px #6a00ff;
-     padding-top: 110px;
-     padding-left: 100px;
-    
+
 }
 
-.lado-esquerdo img{  
-    width: 200px;
-    height: 200px;
-    margin-left: 300px;
-    margin-top: 60px;
+.foto-dev{  
+    width: 220px;
+    height: 220px;
+    margin-left: 140px;
+    margin-top: 30px;
      box-shadow:
         0 0 8px #7900ff,
         0 0 18px #4c00ff;
@@ -217,27 +224,24 @@
 .nome-dev h3{
     font-size: 24px;
     color: rgb(255, 255, 255);
-    padding-left: 270px;
-    padding-top: 10px;
+    padding-left: 120px;
+    padding-top: 20px;
 }
 
 .nome-dev h2{
     font-size: 16px;
     color: rgb(250, 249, 249);
-    padding-left: 342px;
-    padding-bottom: 12px;
+    padding-left: 190px;
+    padding-bottom: 6px;
 }
 
 .social{
     display: flex;
     margin-top: 1px;
     gap: calc(18px);
-    margin-left: 240px;
-    margin-right: 300px;
-    padding-top: 2px;
+    margin-left: 85px;
+    margin-top: 8px;
 }
-
-
 
 
 .redes{
@@ -248,17 +252,89 @@
     font-size: 0px;
     box-shadow: 0 90 19px rgba(112, 37, 255, 0.4);
     transition: 0.2s;
-
     
 }
 
-.lado-direito {
+
+.indicadores {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+
+.indicadores span {
+    width: 35px;
+    height: 4px;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+
+}
+
+.indicadores .ativo {
+    background-color: #873cff;
+    box-shadow: 0 0 8px #873cff;
+}
+
+
+
+
+
+.lado-direito{
+    margin-top: 50px;
+    margin-left: 170px ;
+}
+
+.lado-direito p{
     color: white;
-    padding-left: 700px; 
     font-size: 30px;
-    padding-right: 400px;
+    margin-right: 5%;
+    margin-top: 17px;
+    margin-left: 70px;
+}
+
+.descricao-dev {
+    display: flex;
+    margin-right: 70px;
+}
+
+.descricao-dev h3{
+    color: #fcfcfc;
+     text-shadow:
+        0 0 5px #a855ff,
+        0 0 10px #8b2cff,
+        0 0 20px #6a00ff;
+    font-size: 40px;
+    margin-top: 140px;
+}
+
+.descricao-dev img{
+    width: 60px;
+    height: 60px;
+    margin-top: 120px;
     
 }
 
+.formacao-dev{
+     display: flex;
+     margin-right: 70px;
+     margin-top: 30px;
+}
 
- 
+.formacao-dev h3{
+    color: #fcfcfc;
+     text-shadow:
+        0 0 5px #a855ff,
+        0 0 10px #8b2cff,
+        0 0 20px #6a00ff;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.formacao-dev img{
+    width: 50px;
+    height: 50px;
+    margin-top: 27px;
+    margin-right: 10px;
+}
