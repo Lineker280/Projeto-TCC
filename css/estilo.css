@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&display=swap');
+
+
+
 *{
   margin:0; /*zerando as margems*/
   padding:0; /*zerando o espaço entre a margem e o elemento*/
  
  }
+
+
+ 
 
  body {
     
@@ -180,10 +187,10 @@
 
 
 .desenvolvedores{
-     height: 900px;
+     height: 750px;
      width: 100%;
      display: flex;
-     background-image: url("../img/teste1.png");
+     background-image: url("../img/fundo-devs.png");
      backdrop-filter: initial;
      background-repeat: no-repeat;
      background-size: auto;
@@ -191,28 +198,24 @@
 }
 
 .lado-esquerdo {
-    margin-top: 120px;
      padding-left: 100px;
     margin-right: 50px;
-    margin-top: 100px;
+    margin-top: 40px;
 
 }
 
 
 .lado-esquerdo h1{
-    font-size: 50px;
+    font-size: 60px;
     color: #fcfcfc;
-     text-shadow:
-        0 0 5px #a855ff,
-        0 0 10px #8b2cff,
-        0 0 20px #6a00ff;
-
+    -webkit-text-stroke: 3.4px #2d047a;
+   
 }
 
 .foto-dev{  
-    width: 220px;
-    height: 220px;
-    margin-left: 140px;
+    width: 230px;
+    height: 230px;
+    margin-left: 170px;
     margin-top: 30px;
      box-shadow:
         0 0 8px #7900ff,
@@ -222,24 +225,25 @@
 }
 
 .nome-dev h3{
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    padding-left: 120px;
+    font-size: 30px;
+    color: white;
+    padding-left: 130px;
     padding-top: 20px;
+     font-family: 'Frank Ruhl Libre', serif;
 }
 
 .nome-dev h2{
-    font-size: 16px;
-    color: rgb(250, 249, 249);
-    padding-left: 190px;
-    padding-bottom: 6px;
+    font-size: 24px;
+    color: white;
+    padding-left: 200px;
+    padding-bottom: 15px;
 }
 
 .social{
     display: flex;
     margin-top: 1px;
     gap: calc(18px);
-    margin-left: 85px;
+    margin-left: 120px;
     margin-top: 8px;
 }
 
@@ -260,9 +264,10 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 30%;
 }
+
 
 .indicadores span {
     width: 35px;
@@ -279,18 +284,15 @@
 
 
 
-
-
 .lado-direito{
-    margin-top: 50px;
-    margin-left: 170px ;
+    margin-left: 10px ;
 }
 
 .lado-direito p{
     color: white;
     font-size: 30px;
-    margin-right: 5%;
-    margin-top: 17px;
+    margin-right:auto;
+    margin-top: 11px;
     margin-left: 70px;
 }
 
@@ -301,6 +303,7 @@
 
 .descricao-dev h3{
     color: #fcfcfc;
+     font-family: 'Frank Ruhl Libre', serif;
      text-shadow:
         0 0 5px #a855ff,
         0 0 10px #8b2cff,
@@ -319,11 +322,12 @@
 .formacao-dev{
      display: flex;
      margin-right: 70px;
-     margin-top: 30px;
+     margin-top: 20px;
 }
 
 .formacao-dev h3{
     color: #fcfcfc;
+     font-family: 'Frank Ruhl Libre', serif;
      text-shadow:
         0 0 5px #a855ff,
         0 0 10px #8b2cff,
