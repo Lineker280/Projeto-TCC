@@ -29,7 +29,7 @@
      background-image: url("../img/Home.png");
      background-repeat: no-repeat;
      background-size: auto;
-     padding-left: 0%;
+     padding-bottom: 10px;
      
 
  }
@@ -96,6 +96,8 @@
     padding-left: 350px;
     gap: 180px;
     padding-bottom: 100px;
+    margin-bottom: 100px;
+    
 }
 
 .estatistica p {
@@ -108,12 +110,12 @@
 
 .servicos{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 290px;
      background-image:
         linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
         url(../img/back1.jpg) ;                      
     background-repeat: no-repeat;
-    padding-bottom: 30px;
+    
   
    
 }
@@ -187,6 +189,7 @@
 
 
 .desenvolvedores{
+    padding-bottom: 180px;
      height: 750px;
      width: 100%;
      display: flex;
@@ -194,6 +197,7 @@
      backdrop-filter: initial;
      background-repeat: no-repeat;
      background-size: auto;
+    
      
 }
 
@@ -225,9 +229,9 @@
 }
 
 .nome-dev h3{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
-    padding-left: 130px;
+    padding-left: 80px;
     padding-top: 20px;
      font-family: 'Frank Ruhl Libre', serif;
 }
@@ -235,7 +239,7 @@
 .nome-dev h2{
     font-size: 24px;
     color: white;
-    padding-left: 200px;
+    padding-left: 140px;
     padding-bottom: 15px;
 }
 
@@ -341,4 +345,77 @@
     height: 50px;
     margin-top: 27px;
     margin-right: 10px;
+}
+
+
+
+.mvv {
+    height: 670px;
+     width: 100%;
+     display: flex;
+     background-image: url("../img/teste2.png");
+     backdrop-filter: initial;
+     background-repeat: no-repeat;
+     background-size: auto;
+}
+
+.mvv img{
+ width: 150px;
+ height: 150px;
+ padding-top: 40px;
+ padding-left: 250px;
+}
+
+.mvv h1{
+    color: white;
+    padding-left: 180px;
+    font-size: 80px;
+    padding-top: 30px;
+
+     background: linear-gradient(
+        #ffffff 40%,
+     
+        #7107e2 75%,
+        #5a02f1 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 12px rgba(139, 44, 255, 0.15);
+}
+
+.visao p{
+    color: white;
+    padding-right: 40px;
+    padding-left: 110px;
+    padding-top: 50px ;
+    font-size: 20px;
+}
+
+.valores p{
+    color: white;
+    padding-right: 30px;
+    padding-left: 130px;
+    padding-top: 50px ;
+    font-size: 20px;
+}
+
+.missao p{
+    color: white;
+    padding-right: 80px;
+    padding-left: 100px;
+    padding-top: 50px ;
+    font-size: 20px;
+}
+
+.visao h1 {
+    padding-left: 220px;
+}
+
+.missao img{
+    width: 130px;
+    height: 130px;
+    padding-top: 60px;
 }
