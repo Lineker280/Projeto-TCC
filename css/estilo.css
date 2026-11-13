@@ -419,3 +419,96 @@
     height: 130px;
     padding-top: 60px;
 }
+
+
+.portifolio {
+    margin-top: 200px ;
+    height: 800px;
+    gap: 80px;
+}
+
+.Titulo-portifolio {
+    margin-left: 30%;
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.txt-1{
+    color: white;
+}
+
+.txt-2{
+    color: #8e19fc;
+}
+
+
+.card-portifolio {
+    display: flex;
+    margin-top: 80px;
+    gap: 60px;
+    margin-right: 4%;
+    margin-left: 100px;
+}
+
+.cards-port {
+    width: 30%;
+    height: 40%;
+    padding-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+        background:
+        linear-gradient(#121014, #000) padding-box,
+        linear-gradient(
+            135deg,
+            #b000ff,
+            #3300ff
+        ) border-box;
+
+
+    transition: 0.3s ease;
+}
+
+.cards-port:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 0 40px rgba(117, 4, 230, 0.35);
+}
+
+.estrela{
+    width: 200px;
+    height: 70px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.card-portifolio p{
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 30px ;
+}
+
+.avaliador-port {
+    display: flex;
+    color: white;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.avaliador-port img{
+        display: flex;
+        width: 60px;
+        height: 70px;
+        margin-left: 20px;
+        box-shadow: #f3f1f5;
+        
+}
+
+.avaliador-port h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+}
