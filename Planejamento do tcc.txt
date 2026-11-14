@@ -1,9 +1,7 @@
 Coisas q faltam:
 
---Arrumar a parte superior extra do "desenvolvedores"
---Clientes Satisfeitos
---Footer
-
+--Acessibilidade
+--Responsividade
 --Mecânicas
 
 
