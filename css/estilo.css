@@ -1,7 +1,7 @@
 *{
   margin:0; /*zerando as margems*/
   padding:0; /*zerando o espaço entre a margem e o elemento*/
- 
+  
  }
 
 
@@ -11,7 +11,7 @@
     
     background-color: #030303;
     font-family: Arial, sans-serif;
-
+    box-sizing: border-box;
     
  }
 
@@ -39,14 +39,14 @@
     width: 80px;
     height: 80px;
     margin-top: 4px;
-    margin-left: 10px;
+    margin-left: 30px;
      transform: rotate(-10deg);
  }
 
  .logo-container h1 {
     color: rgb(255, 241, 241);
     letter-spacing: 4px;
-    margin-left: 10px;
+    margin-left: 20px;
  }
 
  nav{
@@ -57,10 +57,15 @@
  }
 
  nav a {
-    color: rgb(252, 247, 247);
+    color: rgb(250, 246, 246);
     font-size: 20px;
-    transition: 1.0s;
+    transition: 0.7s;
  }
+
+ nav a:hover {
+    transform: translateY(-5px);
+ }
+
 
 
  .home{
@@ -72,9 +77,10 @@
      background-repeat: no-repeat;
      background-size: cover;
      padding-bottom: 10px;
-     
+     transition: 0.7s;
  }
 
+ 
 
 .conteudo {
 
@@ -132,9 +138,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
-   
 }
+
+
 
 .servicos h1{
     padding-top: 90px;
@@ -176,7 +182,10 @@
             #3300ff
         ) border-box;
 
-    transition: 0.3s ease;
+    transition: 0.9s ease;
+
+        
+
 }
 .card img{
     width: 100px;
@@ -195,10 +204,13 @@
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-20px);
     box-shadow:
         0 0 40px rgba(117, 4, 230, 0.35);
-}
+    
+ }
+
+ 
 
 
 
@@ -212,9 +224,7 @@
      background-image: url("../img/fundo-devs.png");
      backdrop-filter: initial;
      background-repeat: no-repeat;
-     background-size: cover;
-    
-     
+     background-size: cover;     
 }
 
 .lado-esquerdo {
