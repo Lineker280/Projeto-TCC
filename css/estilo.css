@@ -1,5 +1,5 @@
 *{
-  margin:0; /*zerando as margems*/
+  margin:0; /*zerando as margens*/
   padding:0; /*zerando o espaço entre a margem e o elemento*/
  
  }
@@ -119,19 +119,21 @@
 
 .estatisticas {
     width: 100%;
-    height: 5px;
+    height: 150px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     color: #f8f7f8;
-    border-top: 2px solid #fafafa;
-    border-bottom: 2px solid #f8f2f2;
+    border-top: 2px;
+    border-bottom: 2px;
     background-color: #201f1f38;
-    padding-top: 10px;
+    padding: 10px 20px;
     font-size: 50px;
-    padding-left: 350px;
-    gap: 180px;
-    padding-bottom: 100px;
+    gap: 50px;
     margin-bottom: 100px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
     
 }
 
@@ -243,7 +245,7 @@
 
      opacity: 0;
      transform: translateY(50px);
-     transition: 6s ease;    
+     transition: 3s ease;    
 }
 
 .desenvolvedores.show {
@@ -411,19 +413,24 @@
 
 
 .mvv {
-    height: 670px;
+
      width: 100%;
      display: flex;
+     justify-content: space-around;
+     align-items: stretch;
      background-image: url("../img/teste.png");
-     backdrop-filter: initial;
-     background-repeat: no-repeat;
      background-size: cover;
-  
+     background-position: center;
+     gap: 30px;
+     padding: 50px 5%;
+     box-sizing: border-box;
 
      opacity: 0;
      transform: translateY(00px);
-     transition: 6s ease;    
+     transition: 3s ease;      
 }
+
+
 
 .mvv.show {
     opacity: 1;
@@ -432,11 +439,30 @@
 }
 
 
+.missao, .visao, .valores {
+    flex: 1;
+    min-width: 0;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
+    
+
+}
+
+
+
+
+
+
 
 .mvv h1{
     color: white;
     font-size: 80px;
     margin-top: 30px;
+    text-align: center;
     
 
      background: linear-gradient(
@@ -453,65 +479,94 @@
     text-shadow: 0 0 12px rgba(139, 44, 255, 0.15);
 }
 
+
+
+
+
+
+
 .visao p{
     color: white;
-    margin-right: -40px;
-    margin-left: -160px;
-    margin-top: 50px ;
+    flex: 1;
+    min-width: 0;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
     font-size: 26px;
     
 }
+
+
 
 .visao img{
  width: 150px;
  height: 150px;
  padding-top: 40px;
- margin-left: 40px;
 }
 
-.visao h1 {
-    margin-right: 120px;
-    margin-left: 10px;
-}
+
+
+
+
+
+
+
+
 
 
 .valores p{
     color: white;
-    padding-right: 30px;
-    padding-left: 130px;
-    padding-top: 50px ;
+    flex: 1;
+    min-width: 0;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
     font-size: 26px;
 }
+
+
 
 .valores img{
  width: 150px;
  height: 150px;
  margin-top: 40px;
- margin-left: 340px;
 }
 
-.valores h1 {
-    margin-left: 280px;
-}
+
+
+
+
+
 
 .missao p{
     color: rgb(245, 243, 243);
-    margin-right: 300px;
-    margin-left: 40px;
-    margin-top: 50px ;
+    flex: 1;
+    min-width: 0;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
     font-size: 26px;
 }
+
+
 
 .missao img{
  width: 150px;
  height: 150px;
  margin-top: 40px;
- margin-left: 240px;
 }
 
-.missao h1 {
-    margin-left: 180px;
-}
+
+
 
 
 
