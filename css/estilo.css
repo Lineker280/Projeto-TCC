@@ -31,14 +31,18 @@
     background-color: rgba(6, 1, 19, 0.562);
     border-bottom: 2px solid rgb(245, 245, 245);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    top: 0%;
-    left: 0%;
+    z-index: 1000;
+
+    
  }
 
  header.show {
     position: inherit;
     transform: translateY(-20px);
+   
  }
 
  .logo-container{
@@ -53,6 +57,7 @@
     margin-top: 4px;
     margin-left: 30px;
      transform: rotate(-10deg);
+     filter: drop-shadow(0 0 5px #8b2cff)
  }
 
  .logo-container h1 {
@@ -66,16 +71,19 @@
     align-items: center;
     gap: 55px;
     padding-right: 19px;
+    cursor: pointer;
  }
 
  nav a {
     color: rgb(250, 246, 246);
     font-size: 20px;
     transition: 0.7s;
+    margin-right: 20px;
  }
 
  nav a:hover {
-    transform: translateY(-5px);
+     color: #a855ff;
+    text-shadow: 0 0 10px #8b2cff;
  }
 
 
@@ -95,25 +103,44 @@
  
 
 .conteudo {
-
-    margin-right: 60%;
-    margin-left: 5%;
     display: flex;
-    
 }
 
 
-.txt{
-
-    margin-top: 200px;
+.conteudo h3{
+    margin-left: 40px;
+    margin-top: 50%;
     color: #f8f8f8;
     align-items: center;
-    font-size: 30px;
+    font-size: 100px;
     text-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #8b2cff,
-        0 0 20px #6a00ff;
-     
+        0 0 8px #7900ff,
+        0 0 18px #9467ff;
+}
+
+.conteudo p{
+    align-items: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.destaque {
+    color: #9467ff;
+}
+
+.bottom {
+    margin-left: 230px;
+    color: white;
+    
+    padding: 18px 30px;
+    border: solid 2px white;
+    border-radius: 20%;
+
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
@@ -125,8 +152,8 @@
     align-items: center;
     text-align: center;
     color: #f8f7f8;
-    border-top: 2px;
-    border-bottom: 2px;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
     background-color: #201f1f38;
     padding: 10px 20px;
     font-size: 50px;
@@ -146,6 +173,8 @@
 
 
 .servicos{
+    height: 100%;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 200px;
     Background-attachment: fixed;
@@ -155,6 +184,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
+
 }
 
 
@@ -401,17 +432,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .mvv {
 
      width: 100%;
@@ -428,6 +448,7 @@
      opacity: 0;
      transform: translateY(00px);
      transition: 3s ease;      
+     
 }
 
 
@@ -452,12 +473,6 @@
 
 }
 
-
-
-
-
-
-
 .mvv h1{
     color: white;
     font-size: 80px;
@@ -478,11 +493,6 @@
 
     text-shadow: 0 0 12px rgba(139, 44, 255, 0.15);
 }
-
-
-
-
-
 
 
 .visao p{
@@ -510,13 +520,6 @@
 
 
 
-
-
-
-
-
-
-
 .valores p{
     color: white;
     flex: 1;
@@ -537,10 +540,6 @@
  height: 150px;
  margin-top: 40px;
 }
-
-
-
-
 
 
 
@@ -568,21 +567,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .portifolio {
     margin-top: 200px ;
     height: 800px;
     gap: 80px;
+    cursor: pointer;
 }
 
 .Titulo-portifolio {
@@ -655,11 +644,11 @@
 }
 
 .avaliador-port img{
-        display: flex;
-        width: 60px;
-        height: 70px;
-        margin-left: 20px;
-        box-shadow: #f3f1f5;
+    display: flex;
+    width: 60px;
+    height: 70px;
+    margin-left: 20px;
+    box-shadow: #f3f1f5;
         
 }
 
@@ -705,6 +694,14 @@
 
 }
 
+.ft h3 {
+    font-size: 20px; ;
+    color: rgb(242, 245, 245);
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
 .footer-infos h1 {
     margin-top: 12px;
     font-size: 50px; ;
@@ -712,9 +709,9 @@
     margin-left: 10px;
 }
 
-.footer-infos h3 {
+.footer-infos a {
     font-size: 20px; ;
-    color: rgb(246, 248, 248);
+    color: rgb(242, 245, 245);
     margin-left: 80px;
     margin-top: 30px;
 }
@@ -722,7 +719,14 @@
 
 .logo-footer {
     margin-top : 40px;
-    margin-left: 120px;
+    margin-left: 200px;
     width: 300px;
     height: 300px;
+}
+
+.direitos {
+    color: white;
+    font-size: 20px;
+    background-color: #000;
+    padding-left: 40%;
 }
