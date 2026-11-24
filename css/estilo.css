@@ -160,7 +160,7 @@
     gap: 50px;
     margin-bottom: 100px;
     box-sizing: border-box;
-    flex-wrap: wrap;
+   
     
 }
 
@@ -170,6 +170,8 @@
     font-weight: bold;
     color: #ffffffd5
 }
+
+
 
 
 .servicos{
@@ -184,7 +186,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    cursor: pointer;
+    
 
 }
 
@@ -212,7 +214,7 @@
     gap: 130px;
     color: #f7f7f7;
     padding-bottom: 80px;
-    
+    cursor: pointer;
 }
 
 .card{
@@ -286,7 +288,7 @@
 }
 
 .lado-esquerdo {
-     padding-left: 100px;
+    margin-left: 100px;
     margin-right: 50px;
     margin-top: 40px;
 
@@ -300,30 +302,35 @@
    
 }
 
-.foto-dev{  
+.foto-dev img{  
     width: 230px;
     height: 230px;
-    margin-left: 170px;
+    margin-left: 177px;
     margin-top: 30px;
      box-shadow:
         0 0 8px #7900ff,
         0 0 18px #4c00ff;
     object-fit: cover;
     border-radius: 90%;
+    display: flex;
+
+    overflow: hidden;
 }
 
-.nome-dev h3{
+
+
+.nome-dev {
     font-size: 40px;
     color: white;
-    padding-left: 80px;
+    margin-left: 100px;
     padding-top: 20px;
      font-family: 'Frank Ruhl Libre', serif;
 }
 
-.nome-dev h2{
+.funcao{
     font-size: 24px;
     color: white;
-    padding-left: 140px;
+    padding-left: 70px;
     margin-bottom: 15px;
 }
 
@@ -348,27 +355,36 @@
 }
 
 
+
+
 .indicadores {
     display: flex;
     align-items: center;
     gap: 5px;
     margin-top: 30px;
-    margin-left: 30%;
+    margin-left: 27%;
 }
 
-
-.indicadores span {
+.indicadores button {
     width: 35px;
-    height: 4px;
-    background-color: #dcdcdc;
-    border-radius: 5px;
+    height: 5px;
 
+    border: none;
+    border-radius: 10px;
+
+    background: #ddd;
+
+    cursor: pointer;
+    transition: 0.6s;
 }
 
-.indicadores .ativo {
-    background-color: #873cff;
-    box-shadow: 0 0 8px #873cff;
+.indicadores button.ativo {
+    background: #7406e9;
+    box-shadow:
+        0 0 8px #a855ff,
+        0 0 15px #8b2cff;
 }
+
 
 
 
@@ -447,8 +463,7 @@
 
      opacity: 0;
      transform: translateY(00px);
-     transition: 3s ease;      
-     
+     transition: 2s ease;      
 }
 
 
