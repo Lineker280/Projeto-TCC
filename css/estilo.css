@@ -141,6 +141,8 @@
 
     font-size: 16px;
     font-weight: bold;
+
+    cursor: pointer;
 }
 
 
@@ -178,7 +180,7 @@
     height: 100%;
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     Background-attachment: fixed;
      background-image:
         linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
@@ -186,8 +188,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-
 }
 
 
@@ -267,7 +267,7 @@
 
 
 .desenvolvedores{
-    margin-bottom: 300px;
+    margin-bottom: 120px;
      height: 750px;
      width: 100%;
      display: flex;
@@ -279,6 +279,8 @@
      opacity: 0;
      transform: translateY(50px);
      transition: 3s ease;    
+        box-shadow:
+        0 0 70px rgb(48, 1, 158);
 }
 
 .desenvolvedores.show {
@@ -471,7 +473,7 @@
      display: flex;
      justify-content: space-around;
      align-items: stretch;
-     background-image: url("../img/teste.png");
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.363), transparent),  url("../img/teste.png");
      background-size: cover;
      background-position: center;
      gap: 30px;
@@ -481,6 +483,8 @@
      opacity: 0;
      transform: translateY(00px);
      transition: 2s ease;      
+     box-shadow:
+        0 0 70px rgb(48, 1, 158);
 }
 
 
