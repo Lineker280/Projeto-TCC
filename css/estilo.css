@@ -389,13 +389,13 @@
 
 
 .lado-direito{
-    margin-left: 10px ;
+    margin-left: 0px ;
 }
 
 .lado-direito p{
     color: white;
     font-size: 30px;
-    margin-right:auto;
+    margin-right: 90p;
     margin-top: 11px;
     margin-left: 70px;
 }
@@ -420,7 +420,6 @@
     width: 60px;
     height: 60px;
     margin-top: 120px;
-    
 }
 
 .formacao-dev{
@@ -714,6 +713,7 @@
     color: rgb(242, 245, 245);
     margin-left: 10px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 
@@ -729,6 +729,8 @@
     color: rgb(242, 245, 245);
     margin-left: 80px;
     margin-top: 30px;
+
+    
 }
 
 
