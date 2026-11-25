@@ -26,14 +26,14 @@ const desenvolvedores = [
     {
 
         nome: "Guilherme Lineker",
-        cargo: "Desenvolvedor Front-end",
+        cargo: "Desenvolvedor Back-end",
         fotos: "./img/desenvolvedores/Lineker.jpeg",
 
-        desc: "Guilherme Lineker Freitas Lima, é um desenvolvedor especializado em Front-End. Ele atua como líder de projetos e um dos fundadores da Star Level, muito capacidado, incluindo em suas refêrencias de formação. Técnico em desenvolvimento de sistemas pela Etec Professor Basilidades de Godoy.",
+        desc: "Guilherme Lineker Freitas Lima, é um desenvolvedor especializado em Back-End. Ele atua como líder de projetos e um dos fundadores da Star Level, muito capacidado, incluindo em suas refêrencias de formação. Técnico em desenvolvimento de sistemas pela Etec Professor Basilidades de Godoy.",
 
         formacao: [
-            "- Técnico em desenvolvimento de Sistemas",
-            "- Análise e Desenvolvimento de Sistemas"
+            "Técnico em desenvolvimento de Sistemas",
+            "Análise e Desenvolvimento de Sistemas"
         ],
 
         redes: {
@@ -55,8 +55,8 @@ const desenvolvedores = [
         desc: "Débora Lopes de Souza, desenvolvedora especializada em Back-End e desenvolvimento FullStack. É atuante como vice lider em projetos da empresa Star Level, possuindo técnico em desenvolvimento de sistemas pela Etec Professor Basilidades de Godoy em sua formação.",
 
         formacao: [
-            "- Técnico em desenvolvimento de Sistemas",
-            "- Análise e Desenvolvimento de Sistemas"
+            "Técnico em desenvolvimento de Sistemas",
+            "Análise e Desenvolvimento de Sistemas"
         ],
 
         redes: {
@@ -77,8 +77,8 @@ const desenvolvedores = [
         desc: " Ana Julia Marques do Prado, é uma desenvolvedora especializada em gerenciamento de projetos. Ela atua como gerente e é um dos fundadores da Star Level, tendo  suas formações  que incluem o Colégio Etec Basilides de Godoy.",
 
         formacao: [
-            "- Técnico em desenvolvimento de Sistemas",
-            "- Análise e Desenvolvimento de Sistemas"
+            "Técnico em desenvolvimento de Sistemas",
+            "Análise e Desenvolvimento de Sistemas"
         ],
 
         redes: {
@@ -100,9 +100,16 @@ const desenvolvedores = [
         desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, mauris sit amet consectetur adipiscing elit.Suspendisse semp",
 
         formacao: [
-            "- Técnico em desenvolvimento de Sistemas",
-            "- Análise e Desenvolvimento de Sistemas"
-        ]
+            "Técnico em desenvolvimento de Sistemas",
+            "Análise e Desenvolvimento de Sistemas"
+        ],
+
+        redes: {
+        whatsapp: "https://wa.me/11986111437",
+        instagram: "https://www.instagram.com/_Lineksz_/",
+        github: "https://github.com/Lineker280",
+        linkedin: "https://linkedin.com/Guilherme_Lineker_Freitas_LimaL"
+        }
 
     },
 
@@ -117,9 +124,16 @@ const desenvolvedores = [
         desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, mauris sit amet consectetur adipiscing elit.Suspendisse semp",
 
         formacao: [
-            "- Técnico em desenvolvimento de Sistemas",
-            "- Análise e Desenvolvimento de Sistemas"
-        ]
+            "Técnico em desenvolvimento de Sistemas",
+            "Análise e Desenvolvimento de Sistemas"
+        ],
+
+        redes: {
+        whatsapp: "https://wa.me/11986111437",
+        instagram: "https://www.instagram.com/_Lineksz_/",
+        github: "https://github.com/Lineker280",
+        linkedin: "https://linkedin.com/Guilherme_Lineker_Freitas_LimaL"
+        }
 
     }
 
@@ -131,8 +145,8 @@ const cargo = document.querySelector("#cargo");
 const desc = document.querySelector("#desc");
 const formacao = document.querySelector("#formacao");
 
-const botoes = document.querySelectorAll(".indicadores button");
 
+const botoes = document.querySelectorAll(".indicadores button");
 
 const whatsapp = document.querySelector("#whatts");
 const instagram = document.querySelector("#insta");
@@ -176,16 +190,18 @@ function trocarDesenvolvedor(index) {
 
    
     botoes.forEach(botao => {
-        botao.classList.remove("ativo");
-    });
 
-    botoes[index].classList.add("ativo");
+    const indice = Number(botao.dataset.index);
+
+    botao.classList.toggle("ativo", indice === index);
+
+});
 
 }
 
 
 
-botoes.forEach(botao => {
+    botoes.forEach(botao => {
 
     botao.addEventListener("click", () => {
 
