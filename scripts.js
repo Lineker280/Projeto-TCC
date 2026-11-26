@@ -97,7 +97,7 @@ const desenvolvedores = [
         cargo: " Administrador de Banco",
         fotos: "./img/desenvolvedores/thiago.jpeg",
 
-        desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, mauris sit amet consectetur adipiscing elit.Suspendisse semp",
+        desc: " Thiago Ferreira Silva é um desenvolvedor focado em análise e modelagem de banco de dados. Sua atuação se dá na construção da base lógica e conceitual das informações a serem utilizadas pelo sistema. Sua formação inclui especialização em análise de dados e desenvolvimento de software.",
 
         formacao: [
             "Técnico em desenvolvimento de Sistemas",
@@ -106,8 +106,8 @@ const desenvolvedores = [
 
         redes: {
         whatsapp: "https://wa.me/11986111437",
-        instagram: "https://www.instagram.com/_Lineksz_/",
-        github: "https://github.com/Lineker280",
+        instagram: "https://www.instagram.com/__thigasss/",
+        github: "https://github.com/ThiagoFerreiraSil",
         linkedin: "https://linkedin.com/Guilherme_Lineker_Freitas_LimaL"
         }
 
@@ -121,7 +121,7 @@ const desenvolvedores = [
         cargo: "Desenvolvedor Front-end",
         fotos: "./img/desenvolvedores/Leonardo.jpeg",
 
-        desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, mauris sit amet consectetur adipiscing elit.Suspendisse semp",
+        desc: " Leonardo de Oliveira Alves Bezerra é um analista especializado em banco de dados. Tal então, ajuda com o desenvolvimento do sistema de banco de dados dos sites produzidos, e se encarrega de funções fundamentais para o avanço da equipe, tendo uma de suas formações na Etec basilides de Godoy",
 
         formacao: [
             "Técnico em desenvolvimento de Sistemas",
@@ -129,9 +129,9 @@ const desenvolvedores = [
         ],
 
         redes: {
-        whatsapp: "https://wa.me/11986111437",
-        instagram: "https://www.instagram.com/_Lineksz_/",
-        github: "https://github.com/Lineker280",
+        whatsapp: "https://wa.me/5511953565689",
+        instagram: "https://www.instagram.com/ln.alvezz/",
+        github: "https://github.com/LeonardoOAB",
         linkedin: "https://linkedin.com/Guilherme_Lineker_Freitas_LimaL"
         }
 
