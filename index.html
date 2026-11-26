@@ -4,53 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
-    
     <title>Star Level</title>
-    </head>
+</head>
 
-    
-    <body> 
-        
-        <main class="home">
-
-      <header> 
+<body> 
+    <main class="home" id="topo">
+        <header> 
             <div class="logo-container"> 
-            <img src="./img/logo.png" class="logo"/>
-            <h1>STAR LEVEL</h1>
-        </div>
+                <img src="./img/logo.png" class="logo" alt="Logo Star Level"/>
+                <h1>STAR LEVEL</h1>
+            </div>
 
-        <nav> 
-                  
-                <a>Home</a>
-                <a>Projetos</a>
-                <a>Contato</a>           
-                <a>Login</a>
-       </nav>
-                  
+            <nav>
+                <a href="#topo">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#devs">Equipe</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </header> 
 
-
         <section class="conteudo"> 
+            <div>
+                <h3>STAR LEVEL</h3>
+                <p>DO <span class="destaque">PROCESSO</span> AO SUCESSO</p> 
+                <a href="#sobre" class="bottom">Saiba mais</a>    
+            </div>
+        </section>
+    </main>
 
-         <div>
-             <h3>STAR LEVEL</h3>
-
-             <p>
-                DO <span class="destaque">PROCESSO</span> AO SUCESSO
-             </p> 
-
-             <a class="bottom">Saiba mais</a>    
-
-              
-         </div>
-
-
-            </section>
-        </main>
-
-
-        <section class="estatisticas">
-
+    <section class="estatisticas">
         <div class="estatistica">
             <span>100+</span>
             <p>Desenvolvedores</p>
@@ -70,75 +53,51 @@
             <span>12</span>
             <p>Equipes Atuantes</p>
         </div>
-
     </section>
 
-    <section class="servicos">
-
-        
-
+    <section class="servicos" id="servicos">
         <h1>Serviços Oferecidos pela Star Level</h1>
             
         <div class="cards">
-
             <div class="card">
-                
-                    <img src="img/laptop.png"  class="icone">
-                
+                <img src="img/laptop.png" class="icone" alt="Engenharia de Software">
                 <h2>Engenharia de Software</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sit
+                    Desenvolvimento de sistemas web, aplicativos e plataformas sob medida, 
+                    aplicando metodologias ágeis, arquitetura escalável e código limpo para 
+                    garantir alta performance e segurança.
                 </p>
             </div>
 
-           
             <div class="card">
-                
-                    <img src="img/game.png"  class="icone">
-                
-                <h2>Gameficação</h2>
+                <img src="img/game.png" class="icone" alt="Gamificação">
+                <h2>Gamificação</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sit
+                    Aplicação de mecânicas de jogos — como rankings, missões e recompensas — 
+                    em sistemas corporativos e educacionais para aumentar o engajamento, a 
+                    produtividade e a retenção de usuários.
                 </p>
             </div>
 
-
             <div class="card">
-                
-                    <img src="img/folder.png" class="icone">
-               
+                <img src="img/folder.png" class="icone" alt="Banco de Dados">
                 <h2>Banco de Dados</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sit
+                    Modelagem, administração e otimização de bancos de dados relacionais e NoSQL, 
+                    assegurando integridade, alta disponibilidade, backups automatizados e 
+                    rapidez no processamento de informações.
                 </p>
             </div>
-
         </div>
     </section>
-    
 
-
-    <section class="desenvolvedores">
-
-
-
+    <section class="desenvolvedores" id="devs">
         <div class="lado-esquerdo">
+            <h1>DESENVOLVEDORES</h1>
 
-
-            <h1 >DESENVOLVEDORES</h1>
-
-                <div class="foto-dev">
-
-                 <img id="fotos" src="img/desenvolvedores/Lineker.jpeg" class="carrossel">
-
-                </div>
-
+            <div class="foto-dev">
+                <img id="fotos" src="img/desenvolvedores/Lineker.jpeg" class="carrossel" alt="Desenvolvedor">
+            </div>
 
             <div class="nome-dev">
                 <h3 id="nome">Guilherme Lineker</h3>
@@ -147,278 +106,177 @@
                 <h2 id="cargo">Desenvolvedor Back-end</h2>
             </div>
 
-        
-
-
-           <div class="social">
-
-
-                <a id="whatts"  href="">
-                <img src="img/whatsapp.png" class="redes">
-
+            <div class="social">
+                <a id="whatts" href="">
+                    <img src="img/whatsapp.png" class="redes" alt="WhatsApp">
                 </a>
-               
-
                 <a id="insta" href="">
-                    <img src="img/insta.png" class="redes">
-
+                    <img src="img/insta.png" class="redes" alt="Instagram">
                 </a>
-
-
                 <a id="git" href="">
-                <img src="img/github.png" class="redes">
-
+                    <img src="img/github.png" class="redes" alt="GitHub">
                 </a>
-
                 <a id="linkedin" href="">
-                <img src="img//linkedin.png" class="redes">
-          
+                    <img src="img/linkedin.png" class="redes" alt="LinkedIn">
                 </a>
-
             </div>
 
-
-          <div class="indicadores">
-
-            <button class="ativo" data-index="0"></button>
-            <button data-index="1"></button>
-            <button data-index="2"></button>
-            <button data-index="3"></button>
-            <button data-index="4"></button>
-            
+            <div class="indicadores">
+                <button class="ativo" data-index="0"></button>
+                <button data-index="1"></button>
+                <button data-index="2"></button>
+                <button data-index="3"></button>
+                <button data-index="4"></button>
             </div>
-
         </div>
 
-
-     <div class="lado-direito">
-
+        <div class="lado-direito">
             <div class="descricao-dev">
-                <img src="./img/icone.png">
+                <img src="./img/icone.png" alt="Ícone Descrição">
                 <h3>DESCRIÇÃO</h3>
-                
             </div>   
 
-                <p id="desc">
-                    Guilherme Lineker Freitas Lima, é um desenvolvedor especializado em Front-End. Ele atua como líder de projetos e um dos fundadores da Star Level, muito capacidado, incluindo em suas refêrencias de formação. Técnico em desenvolvimento de sistemas pela Etec Professor Basilidades de Godoy.
-                </p>
+            <p id="desc">
+                Guilherme Lineker Freitas Lima é um desenvolvedor especializado em Front-End e Back-End. Atua como líder de projetos e um dos fundadores da Star Level, formado como Técnico em Desenvolvimento de Sistemas pela Etec Professor Basilides de Godoy.
+            </p>
 
-                
-             
-
-
-              <div class="formacao-dev">
-                <img src="./img/chapeu.png">
+            <div class="formacao-dev">
+                <img src="./img/chapeu.png" alt="Ícone Formação">
                 <h3>FORMAÇÕES</h3>
-                </div>
+            </div>
 
-                <ul id="formacao"></ul>
-             
-
-
-           
+            <ul id="formacao"></ul>
         </div>
-       
     </section>
 
-
-
-    <section class="mvv">
-        
-
+    <section class="mvv" id="sobre">
         <div class="missao">
-
-            <img src="./img/missao.png">
+            <img src="./img/missao.png" alt="Missão">
             <h1>Missão</h1>
-                <p>
-                    Promover a inovação tecnológica de forma acessível,
-                    aplicando-a em diversas áreas e produtos,
-                    buscando proporcionar experiências interativas e aproximar o
-                    cliente das soluções oferecidas, criando conexões marcantes por
-                    meio da tecnologia e da gamificação.
-                    
-                </p>
+            <p>
+                Promover a inovação tecnológica de forma acessível,
+                aplicando-a em diversas áreas e produtos,
+                buscando proporcionar experiências interativas e aproximar o
+                cliente das soluções oferecidas, criando conexões marcantes por
+                meio da tecnologia e da gamificação.
+            </p>
         </div>
-
 
         <div class="visao">
-
-            <img src="./img/olho.png">
+            <img src="./img/olho.png" alt="Visão">
             <h1>Visão</h1>
-                <p>
-                    Consolidar a empresa nos mercados nacional e
-                    internacional, ampliando sua atuação em diversos
-                    ramos e setores.
-                   
-                </p>
+            <p>
+                Consolidar a empresa nos mercados nacional e
+                internacional, ampliando sua atuação em diversos
+                ramos e setores.
+            </p>
         </div>
         
-
         <div class="valores">
-            <img src="./img/diamante.png">
+            <img src="./img/diamante.png" alt="Valores">
             <h1>Valores</h1>
-                <p>
-                    Prezar pela humanização, pela harmonia e pelo respeito
-                    mútuo entre os integrantes da equipe, bem como pelo compromisso
-                    com a constante inovação tecnológica e com a máxima dedicação nos
-                    serviços prestados aos clientes.
-                    
-                    
-                </p>
+            <p>
+                Prezar pela humanização, pela harmonia e pelo respeito
+                mútuo entre os integrantes da equipe, bem como pelo compromisso
+                com a constante inovação tecnológica e com a máxima dedicação nos
+                serviços prestados aos clientes.
+            </p>
         </div>
-
-
-
-
     </section>
-
 
     <section class="portifolio">
-
-
-
-     <div class="Titulo-portifolio">
-
-        <h1 class="txt-1">Clientes</h1>
-        <h1 class="txt-2">Satisfeitos</h1>
-
-     </div>
-       
+        <div class="Titulo-portifolio">
+            <h1 class="txt-1">Clientes</h1>
+            <h1 class="txt-2">Satisfeitos</h1>
+        </div>
 
         <div class="card-portifolio">
+            <div class="cards-port">
+                <div class="avaliacao-port">
+                    <img src="./img/estrelas-sem-fundo.png" class="estrela" alt="5 estrelas">
+                    <p>
+                        "A equipe da Star Level reestruturou todo o nosso banco de dados e otimizou o sistema interno. O tempo de resposta das consultas caiu pela metade logo na primeira semana."
+                    </p>
+                </div>
+                
+                <div class="avaliador-port">
+                    <img src="./img/kira.png" alt="Clarinton Sálvio">
+                    <h1>Clarinton Sálvio</h1>
+                </div>
+            </div>
 
             <div class="cards-port">
                 <div class="avaliacao-port">
-                <img src="./img/estrelas-sem-fundo.png" class="estrela">
-
-                 <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                </p>
+                    <img src="./img/estrelas-sem-fundo.png" class="estrela" alt="5 estrelas">
+                    <p>
+                        "Implementamos uma plataforma gamificada para o treinamento da nossa equipe comercial e o engajamento subiu mais de 70%. Excelente entrega e suporte impecável."
+                    </p>
+                </div>
+                
+                <div class="avaliador-port">
+                    <img src="./img/kira.png" alt="Robson Ambrózio">
+                    <h1>Robson Ambrózio</h1>
+                </div>
             </div>
-            
-            <div class="avaliador-port">
-                <img src="./img/kira.png">
-                <h1>Clarinton Sálvio</h1>
-            </div>
-
-            </div>
-
 
             <div class="cards-port">
                 <div class="avaliacao-port">
-                <img src="./img/estrelas-sem-fundo.png" class="estrela">
-
-                 <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                </p>
+                    <img src="./img/estrelas-sem-fundo.png" class="estrela" alt="5 estrelas">
+                    <p>
+                        "Profissionais extremamente comprometidos. Tiraram nosso projeto do papel com uma arquitetura moderna, segura e muito intuitiva para os nossos clientes finais."
+                    </p>
+                </div>
+                
+                <div class="avaliador-port">
+                    <img src="./img/kira.png" alt="Neymar Junior">
+                    <h1>Neymar Junior</h1>
+                </div>
             </div>
-            
-            <div class="avaliador-port">
-                <img src="./img/kira.png">
-                <h1>Robson Ambrózio</h1>
-            </div>
-
-            </div>
-
-
-            <div class="cards-port">
-                <div class="avaliacao-port">
-                <img src="./img/estrelas-sem-fundo.png" class="estrela">
-
-                 <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                </p>
-            </div>
-            
-            <div class="avaliador-port">
-                <img src="./img/kira.png">
-                <h1>Neymar Junior</h1>
-            </div>
-            
-            </div>
-
         </div>
-
     </section>
 
-<script src="scripts.js"></script>
-
-    </body>  
-
-<footer>
-        
-    <div class="footer-infos">
-
-        <div class="ft">
-
-            <div class="ft-info">
-
-            <img src="./img/footer/contato.png">
-            <h1>Redes</h1>
-
+    <footer id="contato">
+        <div class="footer-infos">
+            <div class="ft">
+                <div class="ft-info">
+                    <img src="./img/footer/contato.png" alt="Redes">
+                    <h1>Redes</h1>
+                </div>
+                <div class="ft-links">
+                    <a href="mailto:starlevelbusiness@gmail.com">Endereço de Email</a>
+                    <a href="tel:+5511986111437">Telefone</a>
+                </div>
             </div>
 
-                <h3> <a href="starlevelbusiness@gmail.com">Endereço de Email</a> </h3>
-
-
-            <h3> <a href="(55+) 11 98611-1437">Telefone</a></h3>
-            
-        </div>
-
-
-
-        <div class="ft">
-
-            <div class="ft-info">
-
-            <img src="./img/footer/fone.png">
-            <h1>Suporte</h1>
-
+            <div class="ft">
+                <div class="ft-info">
+                    <img src="./img/footer/fone.png" alt="Suporte">
+                    <h1>Suporte</h1>
+                </div>
+                <div class="ft-links">
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
             </div>
 
-
-            <h3>Central de Ajuda</h3>
-            <h3>Termos de Uso</h3>
-        </div>
-
-
-
-        <div class="ft">
-
-            <div class="ft-info">
-
-            <img src="./img/footer/equipe.png">
-            <h1>Equipe</h1>
-
+            <div class="ft">
+                <div class="ft-info">
+                    <img src="./img/footer/equipe.png" alt="Equipe">
+                    <h1>Equipe</h1>
+                </div>
+                <div class="ft-links">
+                    <a href="#devs">Desenvolvedores</a>
+                    <a href="#servicos">Setor de Games</a>
+                </div>
             </div>
 
-
-            <h3>Desenvolvedores</h3>
-            <h3>Setor de Games</h3>
+            <img src="./img/footer/logo-sem-fundo.png" class="logo-footer" alt="Logo Star Level">
         </div>
 
-        <img src="./img/footer/logo-sem-fundo.png" class="logo-footer">
-
-        </div>
-
-            <p class="direitos">©2026 - Todos os Direitos Reservados.</p>
-
+        <p class="direitos">©2026 - Todos os Direitos Reservados.</p>
     </footer>
-            <script src="https://vlibras.gov.br/app/vlibras-plugin.js" defer></script>
-    </html>
-           
+
+    <script src="scripts.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js" defer></script>
+</body>  
+</html>
