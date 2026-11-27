@@ -21,6 +21,61 @@ const myObserver = new IntersectionObserver((entries) => {
 })
 
 
+
+const contadores = document.querySelectorAll('.contador');
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            const contador = entry.target;
+            const objetivo = Number(contador.dataset.target);
+
+            let numero = 0;
+            let inicio = null;
+
+            const duracao = objetivo <= 20 ? 3000 : 2000;
+
+            const atualizar = (tempoAtual) => {
+
+                if (!inicio) inicio = tempoAtual;
+
+                const progresso = Math.min(
+                    (tempoAtual - inicio) / duracao, 1
+                );
+
+                const suavizacao = 1 - Math.pow(1 - progresso, 3);
+
+                numero = Math.floor(objetivo * suavizacao);
+
+                contador.innerText = numero + '+';
+
+                if (progresso < 1) {
+                    requestAnimationFrame(atualizar);
+                } else {
+                    contador.innerText = objetivo + '+';
+                }
+
+            };
+
+            requestAnimationFrame(atualizar);
+
+            observer.unobserve(contador);
+
+        }
+
+    });
+
+});
+
+contadores.forEach((contador) => {
+    observer.observe(contador);
+});
+
+
+
 const equipe1 = [
 
     {
@@ -141,13 +196,6 @@ const equipe1 = [
 
 
 
-
-
-
-
-
-
-
 const equipe2 = [
 
     {
@@ -212,7 +260,7 @@ const equipe2 = [
         whatsapp: "https://wa.me/5511976488452",
         instagram: "https://www.instagram.com/jogosujo",
         github: "https://github.com/HenriqueTomazini3333",
-        linkedin: "https://www.linkedin.com/in/kelvin-pereira-3a693b428"
+        linkedin: "https://www.linkedin.com/in/"
         }
 
     },
@@ -259,7 +307,7 @@ const equipe2 = [
         whatsapp: "https://wa.me/5511976488452",
         instagram: "https://www.instagram.com/jogosujo",
         github: "https://github.com/DenilsonAlve",
-        linkedin: "https://linkedin.com/victor-mollo-cabral-01712a428/"
+        linkedin: "https://linkedin.com//"
         }
 
     }
@@ -289,14 +337,14 @@ const tituloEquipe = document.querySelector("#titulo-equipe");
 
 
 
-// Todas as equipes
+
 const equipes = [equipe1, equipe2];
 
-// Controle da equipe atual
+
 let equipeAtual = 0;
 let desenvolvedores = equipes[equipeAtual];
 
-// Atualiza os links das redes sociais
+
 function atualizarRede(elemento, link) {
 
     if (link) {
@@ -310,7 +358,7 @@ function atualizarRede(elemento, link) {
 
 }
 
-// Cria os indicadores automaticamente
+
 function criarIndicadores() {
 
     indicadores.innerHTML = "";
@@ -331,7 +379,7 @@ function criarIndicadores() {
 
 }
 
-// Troca as informações do desenvolvedor
+
 function trocarDesenvolvedor(index) {
 
     const dev = desenvolvedores[index];
@@ -348,7 +396,7 @@ function trocarDesenvolvedor(index) {
     atualizarRede(github, dev.redes.github);
     atualizarRede(linkedin, dev.redes.linkedin);
 
-    // Atualiza as formações
+ 
     formacao.innerHTML = "";
 
     dev.formacao.forEach(item => {
@@ -361,7 +409,7 @@ function trocarDesenvolvedor(index) {
 
     });
 
-    // Atualiza os indicadores
+  
     const botoes = indicadores.querySelectorAll("button");
 
     botoes.forEach((botao, i) => {
@@ -372,13 +420,13 @@ function trocarDesenvolvedor(index) {
 
 }
 
-// Alterna entre as equipes
+
 function trocarEquipe() {
 
     
     const proximaEquipe = (equipeAtual + 1) % equipes.length;
 
-    // Verifica se a próxima equipe possui integrantes
+    
     if (equipes[proximaEquipe].length === 0) {
 
         alert("Essa equipe ainda não possui integrantes cadastrados!");
@@ -392,17 +440,16 @@ function trocarEquipe() {
 
    
 
-    // Recria os indicadores
+
     criarIndicadores();
 
-    // Começa pelo primeiro integrante
+    
     trocarDesenvolvedor(0);
 
 }
 
-// Evento do botão de troca
+
 botaoEquipe.addEventListener("click", trocarEquipe);
 
-// Inicialização
 criarIndicadores();
 trocarDesenvolvedor(0);

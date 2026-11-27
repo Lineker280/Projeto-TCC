@@ -118,7 +118,7 @@ html {
 
 .conteudo h3{
     margin-left: 40px;
-    margin-top: 50%;
+    margin-top: 40%;
     color: #f8f8f8;
     align-items: center;
     font-size: 100px;
@@ -131,9 +131,9 @@ html {
     align-items: center;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 130px;
+    margin-left: 160px;
     color: white;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .destaque {
@@ -142,7 +142,7 @@ html {
 
 .bottom {
     display: inline-block;
-    margin-left: 230px;
+    margin-left: 40%;
     color: white;
     text-decoration: none;
     padding: 18px 30px;
@@ -212,7 +212,7 @@ html {
     text-align: justify;
     padding-bottom: 90px;
     font-size: 50px;
-    padding-right: 0px;
+    margin-left: 25%;
 }
 
 .cards {
@@ -314,7 +314,7 @@ html {
     font-size: 60px;
     color: #fcfcfc;
     -webkit-text-stroke: 3.4px #2d047a;
-
+    
    
 }
 
@@ -540,7 +540,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 45px;
     box-sizing: border-box;
     
 }
@@ -614,17 +614,16 @@ html {
 
 
 .missao p{
-    color: rgb(245, 243, 243);
+    color: white;
     flex: 1;
-    min-width: 0;
+    min-width: 50px;
     text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 25px;
+    padding: 25px;
     box-sizing: border-box;
     font-size: 26px;
-    margin-right: 40px;
 }
 
 
@@ -771,6 +770,7 @@ html {
     margin-left: 10px;
     margin-top: 30px;
     cursor: pointer;
+    
 }
 
 
@@ -786,7 +786,7 @@ html {
     color: rgb(242, 245, 245);
     margin-left: 80px;
     margin-top: 30px;
-
+    text-decoration: none;
     
 }
 
