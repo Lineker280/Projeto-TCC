@@ -7,44 +7,40 @@
     
     <title>Star Level</title>
     </head>
-
     
     <body> 
-        
-        <main class="home">
+
+    <main class="home" >
 
       <header> 
+
             <div class="logo-container"> 
+
             <img src="./img/logo.png" class="logo"/>
             <h1>STAR LEVEL</h1>
+
         </div>
 
         <nav> 
-                  
-                <a>Home</a>
-                <a>Projetos</a>
-                <a>Contato</a>           
-                <a>Login</a>
+                <a href="Topo">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#devs">Equipe</a>
+                <a href="#contato">Contato</a>
        </nav>
                   
         </header> 
 
 
-        <section class="conteudo"> 
+        <section class="conteudo" id="Topo"> 
 
          <div>
              <h3>STAR LEVEL</h3>
 
-             <p>
-                DO <span class="destaque">PROCESSO</span> AO SUCESSO
-             </p> 
+             <p> DO <span class="destaque">PROCESSO</span> AO SUCESSO</p> 
 
-             <a class="bottom">Saiba mais</a>    
-
-              
+             <a href="#sobre" class="bottom">Saiba mais</a>    
          </div>
-
-
             </section>
         </main>
 
@@ -73,49 +69,44 @@
 
     </section>
 
-    <section class="servicos">
-
-        
+    <section class="servicos" id="servicos">
 
         <h1>Serviços Oferecidos pela Star Level</h1>
             
         <div class="cards">
 
             <div class="card">
-                
-                    <img src="img/laptop.png"  class="icone">
+                    <img src="img/laptop.png" class="icone">
                 
                 <h2>Engenharia de Software</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sit
+                    Desenvolvimento de sistemas web, aplicativos e plataformas sob medida, 
+                    aplicando metodologias ágeis, arquitetura escalável e código limpo para 
+                    garantir alta performance e segurança.
                 </p>
             </div>
 
            
             <div class="card">
-                
                     <img src="img/game.png"  class="icone">
                 
                 <h2>Gameficação</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sit
+                    Aplicação de mecânicas de jogos — como rankings, missões e recompensas — 
+                    em sistemas corporativos e educacionais para aumentar o engajamento, a 
+                    produtividade e a retenção de usuários.
                 </p>
             </div>
 
 
             <div class="card">
-                
                     <img src="img/folder.png" class="icone">
                
                 <h2>Banco de Dados</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse semper, mauris sit
+                   Modelagem, administração e otimização de bancos de dados relacionais e NoSQL, 
+                   assegurando integridade, alta disponibilidade, backups automatizados e 
+                   rapidez no processamento de informações.
                 </p>
             </div>
 
@@ -124,19 +115,13 @@
     
 
 
-    <section class="desenvolvedores">
-
-
+    <section class="desenvolvedores" id="devs">
 
         <div class="lado-esquerdo">
-
-
-            <h1 >DESENVOLVEDORES</h1>
+            <h1 id="titulo-equipe">DESENVOLVEDORES</h1>
 
                 <div class="foto-dev">
-
                  <img id="fotos" src="img/desenvolvedores/Lineker.jpeg" class="carrossel">
-
                 </div>
 
 
@@ -147,51 +132,56 @@
                 <h2 id="cargo">Desenvolvedor Back-end</h2>
             </div>
 
-        
-
 
            <div class="social">
 
 
                 <a id="whatts"  href="">
                 <img src="img/whatsapp.png" class="redes">
-
                 </a>
                
 
                 <a id="insta" href="">
                     <img src="img/insta.png" class="redes">
-
                 </a>
 
 
                 <a id="git" href="">
                 <img src="img/github.png" class="redes">
-
                 </a>
+
 
                 <a id="linkedin" href="">
                 <img src="img//linkedin.png" class="redes">
-          
                 </a>
 
             </div>
 
 
-          <div class="indicadores">
+         <div class="troca-devs">  
+
+          <div class="indicadores" id="indicadores">
 
             <button class="ativo" data-index="0"></button>
             <button data-index="1"></button>
             <button data-index="2"></button>
             <button data-index="3"></button>
             <button data-index="4"></button>
-            
             </div>
 
-        </div>
+
+            <button id="trocar-equipe" class="btn-equipe">
+            <i class="fa-solid fa-people-group"></i>
+                ->
+            </button>
+
+            </div> 
+
+    </div>
 
 
      <div class="lado-direito">
+
 
             <div class="descricao-dev">
                 <img src="./img/icone.png">
@@ -203,19 +193,13 @@
                     Guilherme Lineker Freitas Lima, é um desenvolvedor especializado em Front-End. Ele atua como líder de projetos e um dos fundadores da Star Level, muito capacidado, incluindo em suas refêrencias de formação. Técnico em desenvolvimento de sistemas pela Etec Professor Basilidades de Godoy.
                 </p>
 
-                
-             
-
-
+        
               <div class="formacao-dev">
                 <img src="./img/chapeu.png">
                 <h3>FORMAÇÕES</h3>
                 </div>
 
                 <ul id="formacao"></ul>
-             
-
-
            
         </div>
        
@@ -223,7 +207,7 @@
 
 
 
-    <section class="mvv">
+    <section class="mvv" id="sobre">
         
 
         <div class="missao">
@@ -292,12 +276,7 @@
                 <img src="./img/estrelas-sem-fundo.png" class="estrela">
 
                  <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
+                "A equipe da Star Level reestruturou todo o nosso banco de dados e otimizou o sistema interno. O tempo de resposta das consultas caiu pela metade logo na primeira semana."
                 </p>
             </div>
             
@@ -314,12 +293,7 @@
                 <img src="./img/estrelas-sem-fundo.png" class="estrela">
 
                  <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
+                "Implementamos uma plataforma gamificada para o treinamento da nossa equipe comercial e o engajamento subiu mais de 70%. Excelente entrega e suporte impecável."
                 </p>
             </div>
             
@@ -336,12 +310,7 @@
                 <img src="./img/estrelas-sem-fundo.png" class="estrela">
 
                  <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse semper, mauris sit."
+                "Profissionais extremamente comprometidos. Tiraram nosso projeto do papel com uma arquitetura moderna, segura e muito intuitiva para os nossos clientes finais."
                 </p>
             </div>
             
@@ -356,11 +325,9 @@
 
     </section>
 
-<script src="scripts.js"></script>
 
-    </body>  
 
-<footer>
+<footer id="contato">
         
     <div class="footer-infos">
 
@@ -374,9 +341,7 @@
             </div>
 
                 <h3> <a href="starlevelbusiness@gmail.com">Endereço de Email</a> </h3>
-
-
-            <h3> <a href="(55+) 11 98611-1437">Telefone</a></h3>
+                <h3> <a href="11986111437">Telefone</a></h3>
             
         </div>
 
@@ -419,6 +384,12 @@
             <p class="direitos">©2026 - Todos os Direitos Reservados.</p>
 
     </footer>
+
+
+            <script src="scripts.js"></script>
             <script src="https://vlibras.gov.br/app/vlibras-plugin.js" defer></script>
+
+
+    </body>  
     </html>
            
