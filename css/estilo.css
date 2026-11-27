@@ -27,113 +27,115 @@ html {
 
  
     
- header { 
+ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    min-height: 85px;
+    padding: 0 2%;
+    box-sizing: border-box;
     background-color: rgba(6, 1, 19, 0.562);
     backdrop-filter: blur(8px);
     border-bottom: 2px solid rgb(245, 245, 245);
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 1000;
- }
-
- 
-
- header.show {
-    position: inherit;
-    transform: translateY(-20px);
-   
- }
-
- .logo-container{
-    display: flex;
-    align-items: center;
-    
- }
-
- .logo{
-    width: 80px;
-    height: 80px;
-    margin-top: 4px;
-    margin-left: 30px;
-     transform: rotate(-10deg);
-     filter: drop-shadow(0 0 5px #8b2cff)
- }
-
- .logo-container h1 {
-    color: rgb(255, 241, 241);
-    letter-spacing: 3px;
-    margin-left: 25px;
-    font-size: 32px;
-    white-space: nowrap;
- }
-
- nav{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding-right: 19px;
-
- }
-
- nav a {
-    color: rgb(250, 246, 246);
-    font-size: 22px;
-    text-decoration: none;
-    transition: 0.7s;
-    margin-right: 20px;
-    cursor: pointer;
-    white-space: nowrap;
- }
-
- nav a:hover {
-    color: #a855ff;
-    text-shadow: 0 0 10px #8b2cff;
-    transform: translateY(-2px);
- }
-
-
-
- .home{
-    width: 100%;
-    height: 880px;
-     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), transparent), 
-     url("../img/home.png");
-     background-repeat: no-repeat;
-     background-size: cover;
-
- }
-
- 
-
-.conteudo {
-    display: flex;
-    padding-top: 60px;
 }
 
 
-.conteudo h3{
-    margin-left: 40px;
-    margin-top: 40%;
-    color: #f8f8f8;
+header.show {
+    position: inherit;
+    transform: translateY(-20px);
+}
+
+
+.logo-container {
+    display: flex;
     align-items: center;
-    font-size: 100px;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: clamp(60px, 4.2vw, 80px);
+    height: auto;
+    margin-top: 4px;
+    transform: rotate(-10deg);
+    filter: drop-shadow(0 0 5px #8b2cff);
+}
+
+.logo-container h1 {
+    color: rgb(255, 241, 241);
+    letter-spacing: 3px;
+    margin-left: 20px;
+    font-size: clamp(24px, 1.7vw, 32px);
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(40px, 1.5vw, 30px);
+}
+
+nav a {
+    color: rgb(250, 246, 246);
+    font-size: clamp(15px, 1.15vw, 22px);
+    text-decoration: none;
+    transition: 0.7s;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #a855ff;
+    text-shadow: 0 0 10px #8b2cff;
+    transform: translateY(-2px);
+}
+
+
+
+.home {
+    width: 100%;
+    min-height: 880px;
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent),
+        url("../img/home.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: clamp(60px, 7vh, 100px);
+    padding-left: clamp(30px, 3vw, 60px);
+    box-sizing: border-box;
+}
+
+.conteudo h3 {
+    margin-top: clamp(180px, 25vh, 270px);
+    margin-left: 0;
+    color: #f8f8f8;
+    font-size: clamp(55px, 5.2vw, 100px);
     text-shadow:
         0 0 8px #7900ff,
         0 0 18px #9467ff;
 }
 
-.conteudo p{
-    align-items: center;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 160px;
-    color: white;
+.conteudo p {
+    font-size: clamp(20px, 1.6vw, 30px);
+    font-family: Cambria, Cochin, Georgia, Times,
+        'Times New Roman', serif;
+    margin-left: clamp(30px, 6vw, 120px);
     margin-bottom: 40px;
+    color: white;
 }
 
 .destaque {
@@ -142,12 +144,12 @@ html {
 
 .bottom {
     display: inline-block;
-    margin-left: 40%;
+    margin-left: clamp(30px, 15vw, 220px);
     color: white;
     text-decoration: none;
     padding: 18px 30px;
     border: solid 2px white;
-    border-radius: 50%;
+    border-radius: 20%;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -156,9 +158,10 @@ html {
 }
 
 
+
 .estatisticas {
     width: 100%;
-    height: 180px;
+    min-height: 180px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -167,72 +170,75 @@ html {
     border-top: solid white 2px;
     border-bottom: solid white 2px;
     background-color: #201f1f38;
-    padding: 30px 20px;
-    font-size: 66px;
-    gap: 50px;
+    padding: 30px clamp(15px, 2vw, 40px);
+    font-size: clamp(40px, 3.45vw, 66px);
+    gap: clamp(15px, 2.6vw, 50px);
     margin-bottom: 100px;
     box-sizing: border-box;
-   
-    
+}
+
+.estatistica {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
 }
 
 .estatistica p {
     padding-top: 9px;
-    font-size: 30px;
+    font-size: clamp(18px, 1.56vw, 30px);
     font-weight: bold;
-    color: #ffffffd5
+    color: #ffffffd5;
 }
 
 
-
-
-.servicos{
-    height: 100%;
+.servicos {
     width: 100%;
+    min-height: 100%;
     margin-bottom: 150px;
-    Background-attachment: fixed;
-     background-image:
+    background-attachment: fixed;
+    background-image:
         linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-        url(../img/back1.jpg) ;                      
+        url(../img/back1.jpg);
+
     background-repeat: no-repeat;
-    text-transform: justify;
     background-position: center;
+    background-size: cover;
 }
 
-
-
-.servicos h1{
+.servicos h1 {
     padding-top: 90px;
     color: #f5f4f7d3;
     text-shadow:
         0 0 5px #a855ff,
         0 0 10px #8b2cff,
         0 0 20px #6a00ff;
+
     text-align: justify;
     padding-bottom: 90px;
-    font-size: 50px;
-    margin-left: 25%;
+    font-size: clamp(35px, 2.6vw, 50px);
+    margin-left: clamp(30px, 25%, 480px);
 }
+
+
 
 .cards {
-   
-    font-size: 120px;
-    height: 600px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 130px;
-    color: #f7f7f7;
-    padding-bottom: 80px;
-    cursor: pointer;
     align-items: stretch;
+    gap: clamp(25px, 6.8vw, 130px);
+    color: #f7f7f7;
+    padding: 0 30px 80px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
-.card{
-   
-    height: 50%;
-    width: 20%;
-    padding-top: 0px;
-    padding-bottom: 240px;
+.card {
+    width: 100%;
+    max-width: 380px;
+    min-width: 0;
+    min-height: 420px;
+    box-sizing: border-box;
     border: 2px solid transparent;
     background:
         linear-gradient(#121014, #000) padding-box,
@@ -243,140 +249,131 @@ html {
         ) border-box;
 
     transition: 0.9s ease;
-
-        
-
-}
-.card img{
-    width: 100px;
-    height: 100px;
-    padding-left: 37%;
 }
 
-.card h2{
-    font-size: 30px;
+.card img {
+    display: block;
+    width: clamp(70px, 5.2vw, 100px);
+    height: auto;
+    margin: 20px auto;
+}
+
+.card h2 {
+    font-size: clamp(23px, 1.56vw, 30px);
     padding-bottom: 10%;
     text-align: center;
 }
-.card p{
-    font-size: 25px;
+
+.card p {
+    font-size: clamp(18px, 1.3vw, 25px);
     text-align: center;
     box-sizing: border-box;
-    margin: 20px 20px;
+    margin: 20px;
 }
 
 .card:hover {
     transform: translateY(-20px);
     box-shadow:
         0 0 40px rgba(117, 4, 230, 0.35);
-    
- }
-
- 
+}
 
 
 
 
-
-.desenvolvedores{
+.desenvolvedores {
+    width: 100%;
+    min-height: 750px;
+    display: grid;
+    grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+    align-items: start;
+    padding: 40px clamp(30px, 5vw, 100px);
+    box-sizing: border-box;
     margin-bottom: 120px;
-     height: 750px;
-     width: 100%;
-     display: flex;
-     background-image: url("../img/fundo-devs.png");
-     backdrop-filter: initial;
-     background-repeat: no-repeat;
-     background-size: cover; 
-
-     opacity: 0;
-     transform: translateY(50px);
-     transition: 3s ease;    
-        box-shadow:
-        0 0 70px rgb(48, 1, 158);
+    
+    background-image: url("../img/fundo-devs.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 3s ease;
+    box-shadow: 0 0 70px rgb(48, 1, 158);
 }
 
 .desenvolvedores.show {
     opacity: 1;
     transform: translateY(0);
-
 }
+
 
 .lado-esquerdo {
-    margin-left: 100px;
-    margin-right: 50px;
-    margin-top: 40px;
-
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
 }
 
-
-.lado-esquerdo h1{
-    font-size: 60px;
+.lado-esquerdo h1 {
+    font-size: clamp(40px, 3.1vw, 60px);
     color: #fcfcfc;
     -webkit-text-stroke: 3.4px #2d047a;
-    
-   
+    margin-left: 50px;
 }
 
-.foto-dev img{  
-    width: 230px;
-    height: 230px;
-    margin-left: 177px;
-    margin-top: 30px;
-     box-shadow:
+
+.foto-dev img {
+    display: block;
+    width: clamp(180px, 12vw, 230px);
+    height: clamp(180px, 12vw, 230px);
+    margin: 30px auto 0;
+    box-shadow:
         0 0 8px #7900ff,
         0 0 18px #4c00ff;
+
     object-fit: cover;
     border-radius: 90%;
-    display: flex;
-
-    overflow: hidden;
-  
 }
-
 
 
 .nome-dev {
-    font-size: 40px;
+    width: 100%;
+    font-size: clamp(28px, 2.1vw, 40px);
     color: white;
-    margin-left: 100px;
-    margin-top: 20px;
+    margin: 20px auto 0;
     font-family: 'Frank Ruhl Libre', serif;
-
-    width: 60%;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
 }
 
-.funcao{
-    font-size: 24px;
+
+.funcao {
+    width: 100%;
+    font-size: clamp(18px, 1.25vw, 24px);
     color: white;
-    padding-left: 70px;
-    margin-bottom: 15px;
-
-    width: 70%;
+    padding: 0;
+    margin-bottom: 25px;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
 }
 
-.social{
+
+.social {
     display: flex;
-    margin-top: 1px;
-    gap: calc(18px);
-    margin-left: 130px;
-    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 1vw, 18px);
+    margin: 8px 0 0;
 }
 
-
-.redes{
-    height: 55px;
-    width: 55px;
+.redes {
+    height: clamp(42px, 2.9vw, 55px);
+    width: clamp(42px, 2.9vw, 55px);
     border: 5px solid #2d027e;
     border-radius: 100%;
     font-size: 0px;
-    box-shadow: 0 90 19px rgba(112, 37, 255, 0.4);
+    box-shadow: 0 0 19px rgba(112, 37, 255, 0.4);
     transition: 0.2s;
-    
 }
+
 
 
 .troca-devs {
@@ -385,21 +382,19 @@ html {
 
 .indicadores {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 5px;
-    margin-top: 30px;
-    margin-left: 28%;
+    margin: 30px 0 0;
+    margin-left: 35%;
 }
 
 .indicadores button {
-    width: 35px;
+    width: clamp(25px, 1.8vw, 35px);
     height: 5px;
-
     border: none;
     border-radius: 10px;
-
     background: #ddd;
-
     cursor: pointer;
     transition: 0.6s;
 }
@@ -410,7 +405,6 @@ html {
         0 0 8px #a855ff,
         0 0 15px #8b2cff;
 }
-
 
 
 
@@ -434,123 +428,124 @@ html {
 }
 
 
-
-
-
-.lado-direito{
-    margin-left: 0px ;
+.lado-direito {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
 }
 
-.lado-direito p{
+.lado-direito p {
     color: white;
-    font-size: 36px;
-    margin-right: 20px;
-    margin-top: 11px;
-    margin-left: 70px;
+    font-size: clamp(20px, 1.9vw, 36px);
+    margin: 11px 20px 0 clamp(20px, 3.65vw, 70px);
 }
+
+
 
 .descricao-dev {
     display: flex;
-    margin-right: 10px;
+    align-items: center;
+    margin-right: 1px;
+    margin-top: clamp(70px, 7.3vw, 100px);
 }
 
-.descricao-dev h3{
+.descricao-dev h3 {
     color: #fcfcfc;
-     font-family: 'Frank Ruhl Libre', serif;
-     text-shadow:
+    font-family: 'Frank Ruhl Libre', serif;
+    text-shadow:
         0 0 5px #a855ff,
         0 0 10px #8b2cff,
         0 0 20px #6a00ff;
-    font-size: 40px;
-    margin-top: 140px;
+
+    font-size: clamp(28px, 2.1vw, 40px);
+    margin-top: 0;
 }
 
-.descricao-dev img{
-    width: 60px;
-    height: 60px;
-    margin-top: 120px;
+.descricao-dev img {
+    width: clamp(40px, 3.1vw, 60px);
+    height: auto;
+    margin-top: 0;
 }
 
-.formacao-dev{
-     display: flex;
-     margin-right: 70px;
-     margin-top: 20px;
+
+.formacao-dev {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 20px;
 }
 
-.formacao-dev h3{
+.formacao-dev h3 {
     color: #fcfcfc;
-     font-family: 'Frank Ruhl Libre', serif;
-     text-shadow:
+    font-family: 'Frank Ruhl Libre', serif;
+    text-shadow:
         0 0 5px #a855ff,
         0 0 10px #8b2cff,
         0 0 20px #6a00ff;
-    font-size: 40px;
-    margin-top: 30px;
+
+    font-size: clamp(28px, 2.1vw, 40px);
+    margin-top: 0;
+
 }
 
-.formacao-dev img{
-    width: 50px;
-    height: 50px;
-    margin-top: 27px;
+.formacao-dev img {
+    width: clamp(35px, 2.6vw, 50px);
+    height: auto;
+    margin-top: 0;
     margin-right: 10px;
 }
 
-#formacao li{
+
+#formacao li {
     color: white;
-    font-size: 30px;
-    margin-right: 90px;
-    margin-top: 11px;
-    margin-left: 70px;
+    font-size: clamp(18px, 1.56vw, 30px);
+    margin: 11px 20px 0 clamp(20px, 3.65vw, 70px);
 }
+
+
 
 
 .mvv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.363), transparent),
+        url("../img/teste.png");
 
-     width: 100%;
-     display: flex;
-     justify-content: space-around;
-     align-items: stretch;
-     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.363), transparent),  url("../img/teste.png");
-     background-size: cover;
-     background-position: center;
-     padding: 50px 5%;
-     box-sizing: border-box;
-
-     opacity: 0;
-     transform: translateY(00px);
-     transition: 2s ease;      
-     box-shadow:
-        0 0 70px rgb(48, 1, 158);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 5%;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(0);
+    transition: 2s ease;
+    box-shadow: 0 0 70px rgb(48, 1, 158);
 }
-
-
 
 .mvv.show {
     opacity: 1;
     transform: translateY(0);
-
 }
-
 
 .missao, .visao, .valores {
     flex: 1;
     min-width: 0;
-    text-align: center; 
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 45px;
+    padding: clamp(15px, 2.34vw, 45px);
     box-sizing: border-box;
-    
 }
 
-.mvv h1{
+.mvv h1 {
     color: white;
-    font-size: 80px;
+    font-size: clamp(48px, 4.1667vw, 80px);
     margin-top: 30px;
     text-align: center;
-    
-     background: linear-gradient(
+    background: linear-gradient(
         #ffffff 40%,
         #7107e2 75%,
         #5a02f1 100%
@@ -559,247 +554,203 @@ html {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
     text-shadow: 0 0 12px rgba(139, 44, 255, 0.15);
 }
 
 
-.visao p{
-    color: white;
-    flex: 1;
-    min-width: 50px;
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    box-sizing: border-box;
-    font-size: 26px;
-    
-}
 
-
-
-.visao img{
- width: 150px;
- height: 150px;
- padding-top: 40px;
-}
-
-
-
-
-.valores p{
+.visao p, .valores p, .missao p {
     color: white;
     flex: 1;
     min-width: 0;
-    text-align: center; 
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: clamp(12px, 1.3vw, 25px);
     box-sizing: border-box;
-    font-size: 26px;
+    font-size: clamp(18px, 1.354vw, 26px);
 }
 
 
-
-.valores img{
- width: 150px;
- height: 150px;
- margin-top: 40px;
+.visao img, .valores img, .missao img {
+    width: clamp(90px, 7.8125vw, 150px);
+    height: clamp(90px, 7.8125vw, 150px);
 }
 
-
-
-.missao p{
-    color: white;
-    flex: 1;
-    min-width: 50px;
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    box-sizing: border-box;
-    font-size: 26px;
+.visao img {
+    padding-top: clamp(20px, 2.08vw, 40px);
 }
 
-
-
-.missao img{
- width: 150px;
- height: 150px;
- margin-top: 40px;
+.valores img, .missao img {
+    margin-top: clamp(20px, 2.08vw, 40px);
 }
-
-
 
 
 .portifolio {
-    margin-top: 200px ;
-    height: 800px;
+    margin-top: 200px;
+    min-height: 800px;
+    height: auto;
     gap: 80px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .Titulo-portifolio {
     margin-left: 30%;
     display: flex;
     gap: 20px;
-    font-size: 40px;
+    font-size: clamp(28px, 2.083vw, 40px);
 }
 
-.txt-1{
+.txt-1 {
     color: white;
 }
 
-.txt-2{
+.txt-2 {
     color: #8e19fc;
 }
 
-
 .card-portifolio {
     display: flex;
+    justify-content: center;
+    align-items: stretch;
     margin-top: 80px;
-    gap: 60px;
+    gap: clamp(20px, 3.125vw, 60px);
     margin-right: 4%;
-    margin-left: 100px;
+    margin-left: 5.2%;
+    box-sizing: border-box;
 }
 
 .cards-port {
+    flex: 1;
+    min-width: 0;
     width: 30%;
-    height: 40%;
+    min-height: 320px;
+    height: auto;
     border: 2px solid transparent;
     border-radius: 40px;
-        background:
+    background:
         linear-gradient(#121014, #000) padding-box,
-        linear-gradient(
-            135deg,
-            #b000ff,
-            #3300ff
-        ) border-box;
-
+        linear-gradient(135deg, #b000ff, #3300ff) border-box;
 
     transition: 0.3s ease;
+    box-sizing: border-box;
 }
 
 .cards-port:hover {
     transform: translateY(-10px);
-    box-shadow:
-        0 0 40px rgba(117, 4, 230, 0.35);
+    box-shadow: 0 0 40px rgba(117, 4, 230, 0.35);
 }
 
-.estrela{
-    width: 200px;
-    height: 70px;
+.estrela {
+    width: clamp(120px, 10.4167vw, 200px);
+    height: auto;
     margin-left: 30px;
     margin-top: 20px;
 }
 
-.card-portifolio p{
+.card-portifolio p {
     color: white;
-    font-size: 18px;
+    font-size: clamp(14px, 0.9375vw, 18px);
     margin-right: 20px;
-    margin-left: 30px ;
+    margin-left: 30px;
 }
 
 .avaliador-port {
     display: flex;
+    align-items: center;
     color: white;
     margin-top: 40px;
     margin-left: 10px;
     margin-bottom: 20px;
 }
 
-.avaliador-port img{
-    display: flex;
-    width: 60px;
-    height: 70px;
+.avaliador-port img {
+    width: clamp(40px, 3.125vw, 60px);
+    height: clamp(45px, 3.646vw, 70px);
     margin-left: 20px;
-    box-shadow: #f3f1f5;
-        
+    object-fit: cover;
 }
 
-.avaliador-port h1{
+.avaliador-port h1 {
     margin-left: 20px;
     margin-top: 20px;
     color: white;
-    font-size: 30px;
+    font-size: clamp(20px, 1.5625vw, 30px);
 }
-
-
-
-
-
 
 
 .footer-infos {
     width: 100%;
-    height: 400px;
+    min-height: 200px;
+    height: auto;
     color: white;
-    background-image:url("../img/footer/banner.png");
+    background-image: url("../img/footer/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex ;
+    background-position: center;
+    display: flex;
     align-items: center;
-    gap: 3%;
+    justify-content: space-around;
+    gap: clamp(15px, 3vw, 58px);
+    padding: 30px 3%;
+    box-sizing: border-box;
     border-top: solid 3px rgb(115, 0, 223);
-    box-shadow:
-        0 0 90px rgb(95, 2, 243);
-    
+    box-shadow: 0 0 90px rgb(95, 2, 243);
 }
 
 .ft {
-    margin-left: 170px;
-    margin-bottom: 0px;
+    margin-left: clamp(20px, 8.85vw, 170px);
+    margin-bottom: 0;
+    flex-shrink: 0;
 }
 
-.ft-info  {
-    width: 70px;
-    height: 70px;
+.ft-info {
+    width: clamp(45px, 3.646vw, 70px);
+    height: clamp(45px, 3.646vw, 70px);
     display: flex;
     margin-bottom: 10px;
-
 }
 
 .ft h3 {
-    font-size: 20px; ;
+    font-size: clamp(15px, 1.042vw, 20px);
     color: rgb(242, 245, 245);
     margin-left: 10px;
     margin-top: 30px;
     cursor: pointer;
-    
 }
-
 
 .footer-infos h1 {
     margin-top: 12px;
-    font-size: 50px; ;
+    font-size: clamp(30px, 2.604vw, 50px);
     color: rgb(246, 248, 248);
     margin-left: 10px;
 }
 
 .footer-infos a {
-    font-size: 20px; ;
+    font-size: clamp(15px, 1.042vw, 20px);
     color: rgb(242, 245, 245);
-    margin-left: 80px;
+    margin-left: clamp(15px, 4.167vw, 80px);
     margin-top: 30px;
     text-decoration: none;
-    
 }
 
-
 .logo-footer {
-    margin-top : 40px;
-    margin-left: 200px;
-    width: 300px;
-    height: 300px;
+    margin-top: 40px;
+    margin-left: clamp(20px, 10.4167vw, 200px);
+
+    width: clamp(150px, 15.625vw, 300px);
+    height: auto;
+
+    flex-shrink: 0;
 }
 
 .direitos {
     color: white;
-    font-size: 20px;
+    font-size: clamp(14px, 1.042vw, 20px);
     background-color: #000;
-    padding-left: 40%;
+    padding: 10px 0;
+    text-align: center;
+    box-sizing: border-box;
 }
