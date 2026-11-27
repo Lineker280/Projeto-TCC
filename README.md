@@ -49,11 +49,11 @@ SLOGAN: Do processo ao sucesso
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Integrantes do Grupo
-[Ana Júlia Marques do Prado] — Analista de dados — GitHub
-[Débora Lopes de Souza] — Analista de dados — GitHub
-[Guilherme Lineker Freitas Lima] — Analista de dados — GitHub
-[Leonardo de Oliveira Alves Bezerra] — Analista de dados — GitHub
-[Thiago Ferreira Silva] — Analista de dados — GitHub
+[Ana Júlia Marques do Prado] — 
+[Débora Lopes de Souza] — 
+[Guilherme Lineker Freitas Lima] — 
+[Leonardo de Oliveira Alves Bezerra] — 
+[Thiago Ferreira Silva] — 
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
