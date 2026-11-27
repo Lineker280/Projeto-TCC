@@ -97,7 +97,7 @@ const equipe1 = [
         cargo: " Administrador de Banco",
         fotos: "./img/desenvolvedores/thiago.jpeg",
 
-        desc: " Thiago Ferreira Silva é um desenvolvedor focado em análise e modelagem de banco de dados. Sua atuação se dá na construção da base lógica e conceitual das informações a serem utilizadas pelo sistema. Sua formação inclui especialização em análise de dados e desenvolvimento de software.",
+        desc: " Thiago Ferreira Silva é um desenvolvedor focado em análise e modelagem de banco de dados. Sua atuação se dá na construção da base lógica e conceitual das informações a serem utilizadas pelo sistema.",
 
         formacao: [
             "Técnico em desenvolvimento de Sistemas",
